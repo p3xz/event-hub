@@ -2,19 +2,19 @@
 
 A free, open-source template for listing **upcoming** and **past** community events — meetups, workshops, conferences, club nights, anything with a date attached. Fork it, swap in your own events, and ship it as a static page or wire it up to a backend later.
 
-🔗 **[Live demo](https://p3xz.github.io/event-hub/)**
+ **[Live demo](https://p3xz.github.io/event-hub/)**
 
 ![Event Hub preview](https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg)
 
 ## Features
 
-- 🗓️ **Upcoming / Past sections** with anchor navigation
-- ⏱️ **Live countdowns** ("In 3 days", "Tomorrow", "5 days ago") computed client-side from each event's date
-- 🔢 **Auto-updating event counts** next to each section heading — no manual upkeep
-- ⚠️ **Console warnings** if an event is sitting in the wrong section (e.g. a past event still listed under Upcoming)
-- ♿ **Accessible by default** — skip link, semantic landmarks, visible focus states, `prefers-reduced-motion` support
-- 📱 **Responsive** grid layout, mobile-first
-- 🪶 **Zero dependencies** — plain HTML, CSS, and JavaScript, no build step, no framework
+- **Upcoming / Past sections** with anchor navigation
+- **Live countdowns** ("In 3 days", "Tomorrow", "5 days ago") computed client-side from each event's date
+- **Auto-updating event counts** next to each section heading — no manual upkeep
+- **Console warnings** if an event is sitting in the wrong section (e.g. a past event still listed under Upcoming)
+- **Accessible by default** — skip link, semantic landmarks, visible focus states, `prefers-reduced-motion` support
+- **Responsive** grid layout, mobile-first
+- **Zero dependencies** — plain HTML, CSS, and JavaScript, no build step, no framework
 
 ## Tech stack
 
