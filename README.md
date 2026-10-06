@@ -6,7 +6,7 @@
 
 **[Live demo](https://p3xz.github.io/event-hub/)**
 
-![Event Hub preview](https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg)
+![Preview](preview.png)
 
 ## About
 
@@ -118,6 +118,7 @@ Any other static host (Netlify, Vercel, Cloudflare Pages) works by just pointing
 ```
 event-hub/
 ├── index.html        # Page structure and event content
+├── preview.png       # README preview screenshot
 ├── css/
 │   └── style.css     # All styling (design tokens at the top)
 ├── js/
