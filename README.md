@@ -6,6 +6,14 @@ A free, open-source template for listing **upcoming** and **past** community eve
 
 ![Event Hub preview](https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg)
 
+## Why I built this
+
+Built as a personal project: a small, accessible starting point for publishing a community event listing without a backend, a database, or a build step. Fork the repo, paste in your events, and you are live.
+
+## When it was built
+
+September 2026. The repo was created on September 8, 2026, and the template has been refined since.
+
 ## Features
 
 - **Upcoming / Past sections** with anchor navigation
@@ -16,7 +24,7 @@ A free, open-source template for listing **upcoming** and **past** community eve
 - **Responsive** grid layout, mobile-first
 - **Zero dependencies:** plain HTML, CSS, and JavaScript, no build step, no framework
 
-## Tech stack
+## What we used
 
 | Layer | Tech |
 |---|---|
@@ -24,6 +32,20 @@ A free, open-source template for listing **upcoming** and **past** community eve
 | Styling | Vanilla CSS with custom properties (design tokens) |
 | Behavior | Vanilla JavaScript (ES6+), no dependencies |
 | Hosting | Works on any static host: GitHub Pages, Netlify, Vercel, S3, etc. |
+
+## Why we used this
+
+- **Semantic HTML5** because the page is content-first, so native landmarks, headings, and `<time>` elements give us structure and accessibility for free.
+- **Vanilla CSS with custom properties** because a template has to be easy to restyle: every color, font, and spacing value lives as a design token at the top of one file, so a fork can re-theme everything in minutes.
+- **Vanilla JavaScript with zero dependencies** because there is no build step and nothing to install: anyone can open `index.html` and the countdowns, counts, and sanity checks just work.
+- **A plain static site** because event listings are just dates and text; there is no backend logic to justify a server, and static hosting keeps deploys instant and free.
+
+## How it works
+
+- Each event is one `<article class="event-card">` in `index.html`, carrying its date in a `data-event-date` attribute (`YYYY-MM-DD`).
+- On page load, `js/script.js` reads every event date and renders a human-readable countdown ("In 3 days", "Tomorrow", "5 days ago") into each card.
+- Section counts next to the Upcoming / Past headings are computed from the actual markup, so they never drift out of sync.
+- A dev-time check warns in the browser console if an event sits in the wrong section for today's date (e.g. a past event still under Upcoming).
 
 ## Getting started
 
@@ -88,7 +110,7 @@ event-hub/
 
 **GitHub Pages** (fastest path):
 1. Push this repo to GitHub
-2. Go to **Settings → Pages**
+2. Go to **Settings** then **Pages**
 3. Set source to your default branch, root folder
 4. Your site is live at `https://p3xz.github.io/event-hub/`
 
@@ -103,7 +125,7 @@ Any other static host (Netlify, Vercel, Cloudflare Pages) works by just pointing
 
 Contributions welcome: open an issue or PR.
 
-## Author
+## Credits
 
 **Namish Yadav**
 - GitHub: [https://github.com/p3xz](https://github.com/p3xz)
@@ -112,4 +134,4 @@ Contributions welcome: open an issue or PR.
 
 ## License
 
-MIT: see [LICENSE](LICENSE). Use it for personal projects, client work, or your own community, no attribution required (though it's appreciated).
+MIT: see [LICENSE](LICENSE). Use it for personal projects, client work, or your own community, no attribution required (though it is appreciated).
