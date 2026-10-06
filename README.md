@@ -26,6 +26,8 @@ September 2026. The repo was created on September 8, 2026, and the template has 
 
 ## What we used
 
+![HTML](https://skillicons.dev/icons?i=html) ![CSS](https://skillicons.dev/icons?i=css) ![JavaScript](https://skillicons.dev/icons?i=js)
+
 | Layer | Tech |
 |---|---|
 | Markup | Semantic HTML5 (`<header>`, `<main>`, `<section>`, `<article>`, `<time>`) |
